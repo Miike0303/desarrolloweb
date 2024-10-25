@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Autenticación</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <!-- Pantalla de Login -->
+    <div id="loginScreen" class="screen">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <label for="loginEmail">Correo Electrónico</label>
+            <input type="email" id="loginEmail" required>
+            <label for="loginPassword">Contraseña</label>
+            <input type="password" id="loginPassword" required>
+            <button type="submit">Ingresar</button>
+        </form>
+        <p>¿No tienes cuenta? <a href="#" onclick="showRegister()">Regístrate</a></p>
+    </div>
+
+    <!-- Pantalla de Registro -->
+    <div id="registerScreen" class="screen hidden">
+        <h2>Registro</h2>
+        <form id="registerForm">
+            <label for="registerEmail">Correo Electrónico</label>
+            <input type="email" id="registerEmail" required>
+            <label for="registerPassword">Contraseña</label>
+            <input type="password" id="registerPassword" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        <p>¿Ya tienes cuenta? <a href="#" onclick="showLogin()">Inicia Sesión</a></p>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
