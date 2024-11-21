@@ -73,3 +73,10 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.screen {
+    display: none;
+}
+.screen:not(.hidden) {
+    display: block;
+}
